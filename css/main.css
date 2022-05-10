@@ -217,12 +217,14 @@ section h2{
     float: right;
 }
 
+
 /*footer*/
 footer{
     height: 200px;
     margin: 0 auto;    
     padding-top: 20px;
     box-sizing: border-box;
+
 }
 footer h2{
     text-align: center;
@@ -240,3 +242,64 @@ footer h2{
     float: left;
 }
 
+
+/*chat*/
+
+#glass{
+    width: 500px;
+    height: 350px;
+    background:url(../images/chatback.JPG)no-repeat center;
+    background-size: cover;
+    padding: 50px;
+    color:#fff;
+    border-radius: 9px;
+    border: 2px solid transparent;
+    box-shadow: 10px 10px 10px rgba(45,55,68,0.3);
+    backdrop-filter: blur(50px);
+    line-height: 1.5;
+    position: fixed;
+    top:30%;left:30%;
+    opacity: 0.9;
+    text-align: center;
+    display: none;
+ }
+ #glass h2{
+     font-size: 20px;
+     margin-top: 20px;
+     color:#fff;
+ }
+ #glass p{
+     font-size: 20px;
+ }
+ .input{
+     width: 500px;
+     height: 70px;
+     margin: 40px auto;
+ }
+ .input input{
+     width:400px;
+     height:70px;
+     border:none;
+     padding: 0 0 0 40px;
+     font-size: 18px;
+     border-radius: 20px;
+ }
+ #close{
+     position: absolute;
+     top: 10px;
+     right:10px;
+     font-size: 25px;
+     border: none;
+     background: none;
+     color:#fff;
+     cursor: pointer;
+ }
+ 
+ #btn{
+     position: fixed;
+     top:50%;
+     cursor: pointer;
+ }
+ #btn img{
+     width:10%;
+ }

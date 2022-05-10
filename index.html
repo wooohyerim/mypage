@@ -22,7 +22,6 @@
        </ul>  
      </nav>
     </header>
-
    <section class="home" id="sec1">
      <h1 class="text"></h1>
    </section><!--sec1/--> 
@@ -101,6 +100,19 @@
       <p><a href="#"><img src="./images/blog.jpg" alt=""></a></p>
     </div><!--cont_in/--> 
    </footer>
+
+   <p id="btn"><img src="./images/chat.png" alt=""></p>
+
+    <div id="glass">
+      <h1>Chatbot</h1>
+      <h2>저에 대해 무엇이든 물어보세요!</h2>
+      <div class="input">
+        <input type="text" id="userBox" onkeydown="if(event.keyCode == 13){talk()}" placeholder="질문을 입력하세요.">  
+      </div><!--input/-->
+      <p id="chatLog"></p>
+
+      <button id="close">X</button>
+    </div><!--glass/-->
   </div><!--wrap/-->  
 </body>
 </html>

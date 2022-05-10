@@ -1,4 +1,3 @@
- 'use strict'; 
 
 
  const content = "안녕하세요,  우혜림입니다.";           //효과를 주고자 하는 텍스트 선언
@@ -13,3 +12,49 @@
    }
  }
  setInterval(typing, 300);   //(주기적으로 동작해주고 싶은 함수 이름, millisecond)
+
+//홈 글자 타이핑
+
+
+
+
+ function talk(){
+  let know = {
+      "안녕하세요" : "안녕하세요, 만나서 반갑습니다👊🏻",
+      "사는 곳이 어딘가요?" : "저는 경기도 화성시에 거주하고 있습니다.",
+      "무엇을 하고 있나요?" : "프론트엔드개발을 위해 공부하고 있습니다.",
+      "개발을 시작하게 된 계기가 있나요?" : "10년, 20년후에도 계속 할 수 있는  분야를 알아보다가 웹디자인&웹퍼블리셔 교육을 듣게 되었는데,그때 개발의 매력을 느끼면서 본격적으로 시작하게 됐습니다.",
+      "취미가 뭐에요?" : "영화나 드라마, 예능 보는것을 좋아합니다.",
+      "대답해 주셔서 고맙습니다" : "찾아주셔서 감사합니다🙏🏻",
+      "안녕히 계세요" : "다음에 또 만나요👊🏻"
+  };
+
+  let user = document.getElementById('userBox').value;
+      document.getElementById('chatLog').innerHTML = user + "<br>";
+      if(user in know){
+          document.getElementById('chatLog').innerHTML = know[user] + "<br>";            
+      }else{
+          document.getElementById('chatLog').innerHTML = "죄송합니다. 그 질문은 대답할 수 없습니다. <br>";
+      }
+}
+
+// function chatBot(){
+//     document.getElementById('btn').addEventListener('click',function(){
+//         document.getElementById('glass').style.display = 'block'
+//     });
+
+//     document.getElementById('close').addEventListener('click',function(){
+//         document.getElementById('glass').style.display = 'none'
+//     });
+// }
+
+document.getElementById('btn').addEventListener('click',function(){
+  document.getElementById('glass').style.display = 'block'
+});
+
+
+document.getElementById('close').addEventListener('click',function(){
+  document.getElementById('glass').style.display = 'none'
+});
+
+//chatbot
