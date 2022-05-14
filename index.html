@@ -7,7 +7,7 @@
  <title>Woo Hyerim</title>
  <link rel="stylesheet" href="./css/main.css">
 
-<script defer src="./js/main.js" ></script>
+<script src="./js/main.js" defer ></script>
 
 </head>
 <body>
@@ -22,6 +22,7 @@
        </ul>  
      </nav>
     </header>
+    
    <section class="home" id="sec1">
      <h1 class="text"></h1>
    </section><!--sec1/--> 
@@ -105,13 +106,13 @@
 
     <div id="glass">
       <h1>Chatbot</h1>
-      <h2>저에 대해 무엇이든 물어보세요!</h2>
+      <h2>저에게 무엇이든 물어보세요!</h2>
       <div class="input">
         <input type="text" id="userBox" onkeydown="if(event.key === 'Enter'){talk()}" placeholder="질문을 입력하세요.">  
       </div><!--input/-->
       <p id="chatLog"></p>
 
-      <button id="close">X</button>
+      <p id="close">X</p>
     </div><!--glass/-->
   </div><!--wrap/-->  
 </body>

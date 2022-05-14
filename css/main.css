@@ -9,7 +9,7 @@ ul{list-style:none;}
 a{text-decoration:none;}
 
 #wrap{
-    width:100%;
+    width:100vw;
     overflow: hidden;
 }
 
@@ -248,19 +248,18 @@ footer h2{
 #glass{
     width: 500px;
     height: 350px;
-    background:url(../images/chatback.JPG)no-repeat center;
+    background:url(../images/chatback2.jpg)no-repeat center;
     background-size: cover;
     padding: 50px;
     color:#fff;
     border-radius: 9px;
-    border: 2px solid transparent;
     box-shadow: 10px 10px 10px rgba(45,55,68,0.3);
     backdrop-filter: blur(50px);
     line-height: 1.5;
     position: fixed;
     top:30%;left:30%;
-    opacity: 0.9;
     text-align: center;
+    font-family: '배달의민족 한나는 열한살';
     display: none;
  }
  #glass h2{
@@ -270,6 +269,8 @@ footer h2{
  }
  #glass p{
      font-size: 20px;
+     color: #fff;
+     line-height: 1.5;
  }
  .input{
      width: 500px;
@@ -301,5 +302,5 @@ footer h2{
      cursor: pointer;
  }
  #btn img{
-     width:10%;
+     width:8%;
  }
